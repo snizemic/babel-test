@@ -1,14 +1,11 @@
-import pi from './modules/pi';
-import api from './modules/api';
-import Person from './modules/person';
-import {add, mod} from './modules/math';
+import defaultExports from './modules/index';
+import letKeword from './newSyntax/let';
+import constKeword from './newSyntax/const';
+import templateLiteral from './newSyntax/template-literal';
+import spreadOperator from './newSyntax/spread';
 
-console.log(pi);
-console.log(api('Charles'));
-
-var person = new Person();
-person.toString();
-
-console.log('---------------');
-console.log(add(10, 10));
-console.log(mod(45, 8));
+// defaultExports();
+// letKeword();
+// constKeword();
+// templateLiteral();
+spreadOperator();
